@@ -1,4 +1,4 @@
-react-kapsule
+preact-kapsule
 =============
 
 [![NPM package][npm-img]][npm-url]

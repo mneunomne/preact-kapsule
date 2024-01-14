@@ -5,9 +5,10 @@ import React, {
   useRef,
   useMemo,
   useCallback,
-  forwardRef,
   useImperativeHandle
 } from 'preact/hooks';
+
+import { forwardRef } from 'preact/compat';
 
 import { omit } from 'jerrypick';
 

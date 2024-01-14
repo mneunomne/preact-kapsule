@@ -1,4 +1,6 @@
-import React, {
+import { h } from 'preact';
+
+import {
   useState,
   useEffect,
   useLayoutEffect,
@@ -78,7 +80,7 @@ export default function(kapsuleComponent, comboParam, ...restArgs) {
       )
     ));
 
-    return React.createElement(wrapperElementType, { ref: domEl });
+    return h(wrapperElementType, { ref: domEl });
   });
 }
 

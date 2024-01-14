@@ -1,4 +1,6 @@
-import React, { forwardRef, useRef, useState, useEffect, useMemo, useCallback, useImperativeHandle, useLayoutEffect } from 'preact/hooks';
+import { h } from 'preact';
+import { useRef, useState, useEffect, useMemo, useCallback, useImperativeHandle, useLayoutEffect } from 'preact/hooks';
+import { forwardRef } from 'preact/compat';
 import { omit } from 'jerrypick';
 import fromEntries from 'fromentries';
 
@@ -145,7 +147,7 @@ function index (kapsuleComponent, comboParam) {
         }];
       }));
     });
-    return React.createElement(wrapperElementType, {
+    return h(wrapperElementType, {
       ref: domEl
     });
   });

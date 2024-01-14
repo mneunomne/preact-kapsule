@@ -7,7 +7,7 @@ import React, {
   useCallback,
   forwardRef,
   useImperativeHandle
-} from 'react';
+} from 'preact/hooks';
 
 import { omit } from 'jerrypick';
 
